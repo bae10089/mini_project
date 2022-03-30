@@ -20,6 +20,9 @@ public class project_3 {
         else if (c=='y'|| d=='y'){
             e=8000;
         }
+//        else if (s1.equals("y")||s2.equals("y")) {
+//            e = 8000;
+//        }
         else if (a<13){
             e=4000;
         }
