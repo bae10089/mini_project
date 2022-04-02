@@ -13,7 +13,7 @@ public class project_5 {
         ArrayList<Integer> m1 = new ArrayList<>(Arrays.asList(1,3,5,7,8,10,12)); // 31일 이 끝 인달
         ArrayList<Integer> m2 = new ArrayList<>(Arrays.asList(4,6,9,11)); // 30일 이 끝 인달
         LocalDate date = LocalDate.of(a,b,1);
-        System.out.println("["+a+"년 "+b+"월]");
+        System.out.format("["+a+"년 "+"%02d"+"월]\n",b);
         System.out.println(" 일  월  화  수  목  금  토");
         int a1 = 1;
         for (int i = 0; i < 5 ; i++) {
