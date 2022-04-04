@@ -16,7 +16,7 @@ public class project_5 {
         System.out.format("["+a+"년 "+"%02d"+"월]\n",b);
         System.out.println(" 일  월  화  수  목  금  토");
         int a1 = 1;
-        for (int i = 0; i < 5 ; i++) {
+        for (int i = 0; i < 6 ; i++) {
             for (int j = 0; j <7 ; j++) {
                 if(j==0 && map.get(date.getDayOfWeek().toString())>=1&&i==0){
                     System.out.print("    ".repeat(map.get(date.getDayOfWeek().toString())));
@@ -46,6 +46,25 @@ public class project_5 {
                     if(a1>=29){
                         break;
                     }
+                }
+            }if (m1.contains(b)){
+                if(a1>=32){
+                    break;
+                }
+            }
+            else if (m2.contains(b)){
+                if(a1>=31){
+                    break;
+                }
+            }
+            else if (b==2&&date.isLeapYear()){
+                if(a1>=30){
+                    break;
+                }
+            }
+            else if(b==2){
+                if(a1>=29){
+                    break;
                 }
             }
             System.out.println();
