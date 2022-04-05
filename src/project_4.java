@@ -21,7 +21,7 @@ public class project_4 {
         else {
             f=4;
         }
-        System.out.printf("%d%d%d-%d%d",(a%100),b,c,f,e);
+        System.out.printf("%02d%02d%02d-%d%d",(a%100),b,c,f,e);
 
     }
 }
